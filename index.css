@@ -4,7 +4,7 @@
 }
 
 .box-1 .image-1 {
-  min-height: 715px;
+  min-height: 400px;
   background-image: url("images/homephoto.png");
   background-position: 50% 50%;
   --animation-custom_in-translate_x: -300px;
@@ -19,7 +19,7 @@
 }
 
 .box-1 .layout-cell-2 {
-  min-height: 715px;
+  min-height: 105px;
   --animation-custom_in-translate_x: 100px;
   --animation-custom_in-translate_y: 0px;
   --animation-custom_in-opacity: 0;
@@ -32,14 +32,14 @@
 }
 
 .box-1 .text-1 {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 3.4375rem;
   margin: 19px 0 0;
 }
 
 .box-1 .btn-1 {
   border-style: none;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
   font-size: 0.875rem;
   letter-spacing: 3px;
@@ -289,7 +289,7 @@
 
 @media (max-width: 991px) {
   .box-2 .sheet-1 {
-    min-height: 1054px;
+    min-height: 54px;
   }
 
   .box-2 .repeater-1 {
@@ -1852,7 +1852,7 @@
 }
 @media (max-width: 1199px) {
    .box-2 {
-    min-height: 1255px;
+    min-height: 155px;
   }
   .box-2 .gallery-1 {
     margin-right: initial;
@@ -1867,7 +1867,7 @@
     min-height: 181px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 91px) {
   .box-2 .layout-wrap-1 {
     margin-left: calc(((100% - 720px) / 2) + -28px);
   }
