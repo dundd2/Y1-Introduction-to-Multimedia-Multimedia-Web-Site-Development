@@ -49,7 +49,7 @@ Highly realistic physical behaviour e.g. springy seconds hand
 Interactivity
 Submission
 
-This will be via your web space on the Sussex server. You should set up your personal space at the following link: https://www.sussex.ac.uk/its/webspace/ and read the ITS documentation detailing how to upload to your personal web folder. You should upload your site to a folder called IM in your root web folder (public_html). To prevent your site being freely accessible add an index.html document with no content to your IM folder. You will then have to give your home page a name of your choosing (not index.html). Only people who know this page name will be able to access your site. You will need to submit your home page URL before the deadline by using the "Start assignment" link above.
+This will be via your web space on the Sussex server. You should set up your personal space  and read the ITS documentation detailing how to upload to your personal web folder. You should upload your site to a folder called IM in your root web folder (public_html). To prevent your site being freely accessible add an index.html document with no content to your IM folder. You will then have to give your home page a name of your choosing (not index.html). Only people who know this page name will be able to access your site. You will need to submit your home page URL before the deadline by using the "Start assignment" link above.
 
 You will be expected to submit your URL and upload your website including clock animation and make sure that they are working properly by the deadline shown at the top of this page.
 
