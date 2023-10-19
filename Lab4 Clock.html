@@ -4,7 +4,80 @@
   <meta charset="UTF-8">
   <title>JavaScript Clock</title>
   <style>
-    
+
+.d-flex {
+  display: flex;
+}
+select {
+  appearance: none;
+  outline: black;
+  background-color: rgb(255, 68, 68);
+  padding: 0.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 2rem;
+  margin-right: 0.3rem;
+  cursor: pointer;
+  color: #0E141B;
+  border-color: black;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+.main-container {
+  justify-content: center;
+}
+
+.clock-container {
+  padding: 2rem;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  min-height: 30vh;
+
+}
+.alarm-form {
+  justify-content: space-between;
+  width: 50%;
+}
+
+.submit-button {
+  border-color: black;
+  border: 10px;
+  border-radius: 2rem;
+  font-weight: bold;
+}
+
+
+.set-alarm-container .set-alarm-container-title {
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.alarm {
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  align-items: center;
+
+}
+.alarm .delete-alarm {
+  border-radius: 2rem;
+  background-color: rgba(230, 13, 13, 0.918);
+  font-weight: bold;
+  color: rgb(235, 255, 145);
+  font-size:xx-medium;
+}
+
+.time {
+  color: #0E141B;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 #clock {
   position: relative;
   width: 600px;
@@ -74,15 +147,63 @@
 </li></ul>
 </div></header>
 <body>
+  <div class="main-container d-flex">
+    <div class="clock-container d-flex">
+      <!-- Current time -->
+      <div class="current-time mb" id="current-time">_ : _ : _ </div>
+      
+      <!-- Alarm form -->
+      <form class="alarm-form d-flex mb">
+        <div>
+          <!-- Hours -->
+          <select name="hours" id="hours" required></select>
+          
+          <!-- Minutes -->
+          <select required name="minutes" id="minutes"></select>
+          
+          <!-- Seconds -->
+          <select required name="seconds" id="seconds"></select>
+          
+          <!-- AM/PM -->
+          <select required name="am-pm" id="am-pm">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+        
+        <!-- Submit button -->
+        <button class="btn submit-button" id="submitButton" type="submit">Set Alarm</button>
+      </form>
+      
+      <!-- Set alarm container -->
+      <div class="set-alarm-container">
+        <div class="set-alarm-container-title mb">ALARMS</div>
+        
+        <!-- Alarms container -->
+        <div class="alarms-container" id="alarms-container"></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Digital clock -->
   <div id="digital"></div>
-    <h1 id="time-now">Time now:</h1>
-
+  
+  <!-- Analog clock -->
   <ul id="clock">
     <li id="sec"></li>
     <li id="min"></li>
     <li id="hour"></li>
   </ul>
+</div>
   <script>
+    
+const currentTime = document.querySelector("#current-time");
+const setHours = document.querySelector("#hours");
+const setMinutes = document.querySelector("#minutes");
+const setSeconds = document.querySelector("#seconds");
+const setAmPm = document.querySelector("#am-pm");
+const setAlarmButton = document.querySelector("#submitButton");
+const alarmContainer = document.querySelector("#alarms-container");
     function startTime() {
       const today = new Date();
       let h = today.getHours();
@@ -127,6 +248,132 @@
       digital.innerHTML = h + ':' + m + ':' + s;
     }
     setInterval(updateDigital, 1000);
+  
+;
+
+window.addEventListener("DOMContentLoaded", (event) => {
+  
+  dropDownMenu(1, 12, setHours);
+ 
+  dropDownMenu(0, 59, setMinutes);
+
+  dropDownMenu(0, 59, setSeconds);
+
+  setInterval(getCurrentTime, 1000);
+  fetchAlarm();
+});
+
+setAlarmButton.addEventListener("click", getInput);
+
+
+function dropDownMenu(start, end, element) {
+  for (let i = start; i <= end; i++) {
+    const dropDown = document.createElement("option");
+    dropDown.value = i < 10 ? "0" + i : i;
+    dropDown.innerHTML = i < 10 ? "0" + i : i;
+    element.appendChild(dropDown);
+  }
+}
+
+
+function getCurrentTime() {
+  let time = new Date();
+  time = time.toLocaleTimeString("en-US", {
+    hour: "numeric",
+    minute: "numeric",
+    second: "numeric",
+    hour12: true,
+  });
+  currentTime.innerHTML = time;
+
+  return time;
+}
+
+
+function getInput(e) {
+  e.preventDefault();
+  const hourValue = setHours.value;
+  const minuteValue = setMinutes.value;
+  const secondValue = setSeconds.value;
+  const amPmValue = setAmPm.value;
+
+  const alarmTime = convertToTime(
+    hourValue,
+    minuteValue,
+    secondValue,
+    amPmValue
+  );
+  setAlarm(alarmTime);
+}
+function convertToTime(hour, minute, second, amPm) {
+  return `${parseInt(hour)}:${minute}:${second} ${amPm}`;
+}
+function setAlarm(time, fetching = false) {
+  const alarm = setInterval(() => {
+    if (time === getCurrentTime()) {
+      alert("Alarm Ringing");
+    }
+    console.log("running");
+  }, 500);
+
+  addAlaramToDom(time, alarm);
+  if (!fetching) {
+    saveAlarm(time);
+  }
+}
+function addAlaramToDom(time, intervalId) {
+  const alarm = document.createElement("div");
+  alarm.classList.add("alarm", "mb", "d-flex");
+  alarm.innerHTML = `
+              <div class="time">${time}</div>
+              <button class="btn delete-alarm" data-id=${intervalId}>Delete</button>
+              `;
+  const deleteButton = alarm.querySelector(".delete-alarm");
+  deleteButton.addEventListener("click", (e) => deleteAlarm(e, time, intervalId));
+
+  alarmContainer.prepend(alarm);
+}
+function checkAlarams() {
+  let alarms = [];
+  const isPresent = localStorage.getItem("alarms");
+  if (isPresent) alarms = JSON.parse(isPresent);
+
+  return alarms;
+}
+function saveAlarm(time) {
+  const alarms = checkAlarams();
+
+  alarms.push(time);
+  localStorage.setItem("alarms", JSON.stringify(alarms));
+}
+function fetchAlarm() {
+  const alarms = checkAlarams();
+
+  alarms.forEach((time) => {
+    setAlarm(time, true);
+  });
+}
+
+
+function deleteAlarm(event, time, intervalId) {
+  const self = event.target;
+
+  clearInterval(intervalId);
+
+  const alarm = self.parentElement;
+  console.log(time);
+
+  deleteAlarmFromLocal(time);
+  alarm.remove();
+}
+
+function deleteAlarmFromLocal(time) {
+  const alarms = checkAlarams();
+
+  const index = alarms.indexOf(time);
+  alarms.splice(index, 1);
+  localStorage.setItem("alarms", JSON.stringify(alarms));
+}
   </script>
 </body>
 <footer class="align-center clearfix footer grey-80 footer" id="sec-a2a9"><div class="clearfix sheet sheet-1">
