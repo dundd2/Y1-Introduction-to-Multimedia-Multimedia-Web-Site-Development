@@ -13,5 +13,3 @@ Animated clock using JavaScript and canvas
 The project focuses on web design, multimedia integration, and basic interactivity. CSS is used for styling and layout. JavaScript enhances the clock animation.
 
 The site is designed for cross-browser compatibility and responsiveness. Code is validated and follows web standards.
-
-Let me know if you would like me to modify or
