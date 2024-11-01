@@ -1,5 +1,5 @@
 # Y1-Introduction to Multimedia-Multimedia Web Site Development
-This is a website project created for Year1 G5039:Introduction to Multimedia Assignments -Multimedia Web Site Development on Nov 2023. For more information please check the PDF file.
+This website project was created for Year 1 G5039:Introduction to Multimedia Assignments -Multimedia Web Site Development on Nov 2023. For more information please check the PDF file.
 
 This repository showcases my web development skills through a project completed for the Multimedia Web Site Development course, submitted on November 27, 2023. The project involved creating a CSS-managed personal website, adhering to human-computer interaction (HCI) and design guidelines. It highlights my ability to design functional, visually appealing, and user-friendly web applications, demonstrating my proficiency in HTML, CSS, and JavaScript.
 
@@ -13,7 +13,7 @@ This repository showcases my web development skills through a project completed 
 ## Project Overview
 
 **Website Features:**  
-The website consists of five pages, each designed to fulfill specific requirements while providing a cohesive user experience:
+The website consists of five pages, each designed to fulfil specific requirements while providing a cohesive user experience:
 
 1. **Home Page**: The root page introduces the site, featuring a custom title, a brief description, and an image sourced from a free-use platform.
 
