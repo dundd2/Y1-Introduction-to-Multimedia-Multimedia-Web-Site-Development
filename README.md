@@ -1,88 +1,27 @@
 # Y1-G5039 Introduction to Multimedia-Multimedia Web Site Development
-This is a website project created for Introduction to Multimedia Homework -Multimedia Web Site Development on Nov 2023. For more information please check the docx file.
+This is a website project created for Year1 G5039:Introduction to Multimedia Assignments -Multimedia Web Site Development on Nov 2023. For more information please check the PDF file.
 
-This repository showcases my Java programming skills through two projects: a **Library Management System (Project T1 Week 7)** and its extension **(Project T1 Week 11)**. These projects demonstrate proficiency in object-oriented programming, data structures, and software testing. Both received high marks, highlighting my attention to detail and problem-solving abilities.
+This repository showcases my web development skills through a project completed for the Multimedia Web Site Development course, submitted on November 27, 2023. The project involved creating a CSS-managed personal website, adhering to human-computer interaction (HCI) and design guidelines. It highlights my ability to design functional, visually appealing, and user-friendly web applications, demonstrating my proficiency in HTML, CSS, and JavaScript.
 
-## Project T1 Week 7: Core Library System
+## Project Overview
 
-This project implements a basic library system with three core classes: **TextBook**, **Library**, and **LibraryCard**.
+**Website Features:**  
+The website consists of five pages, each designed to fulfill specific requirements while providing a cohesive user experience:
 
-### Functionality
+1. **Home Page**: The root page introduces the site, featuring a custom title, a brief description, and an image sourced from a free-use platform.
 
-- **TextBook**: Manages textbook information (title, chapters, read status). Includes methods for reading chapters, checking completion, and resetting the book.
-  
-- **LibraryCard**: Represents a library card with a borrowing limit and tracking of borrowed books. Includes methods for swiping the card, checking expiration, and retrieving card information.
-  
-- **Library**: Simulates a library with a bookshelf (array) of textbooks. Includes methods for issuing library cards, borrowing books (removing them from the shelf), returning books (re-adding them to the shelf, maintaining the order), and describing the library's current state.
+2. **Video Page**: This page includes an embedded video clip, demonstrating my ability to integrate multimedia elements into web pages.
 
-### This project successfully demonstrates:
+3. **Hobbies/Activities Page**: A creative presentation of my hobbies or activities, complete with images and descriptive text, showcasing my skills in engaging content creation.
 
-- **Object-Oriented Design**: Effective use of classes and objects to model real-world entities.
-  
-- **Data Structures**: Implementation of a fixed-size array to represent the library's bookshelf.
-  
-- **Method Design**: Clear, concise methods that adhere to the specified requirements.
-  
-- **Error Handling**: Robust handling of edge cases, such as attempting to borrow a book with an invalid card or when the shelf is empty.
+4. **Coursework Portfolio Page**: This structured page links to documents and projects completed throughout the module, including significant lab work that demonstrates my progress and capabilities.
 
-**Grade**: 100/100
+5. **JavaScript Clock Animation**: Incorporating the work from Lab 4, this interactive clock not only displays time but also features added functionalities, such as an alarm system, enhancing user engagement.
 
-## Project T1 Week 11: Enhanced Library System with Student and College Simulation
+## Marking and Feedback
 
-Building upon the core library system, this project introduces two new classes: **Student** and **College**, creating a simulation of student library usage.
+The project was peer-reviewed and scored by anonymous users, with results of 75, 65, and 84. Feedback praised the extensive clock animation and the overall fun content of the website. Suggestions for improvement included enhancing the site’s compatibility across different screen sizes.
 
-### Enhancements
+## Conclusion
 
-- **Student Class**: Models a student who can join the library, borrow and read textbooks, and return them. Includes methods to check if studies are complete, simulate studying, and describe the student's status.
-  
-- **College Class**: Simulates a college with a library and multiple students. Includes methods to describe the college's overall state, to advance the simulation one step (random student studies), and to run the simulation for a specified number of steps.
-  
-- **Stand-Alone Execution**: The project is designed to run independently of BlueJ, accepting command-line arguments to customize simulation parameters.
-  
-- **Javadoc Documentation**: Comprehensive Javadoc documentation for the Student and College classes, adhering to JavaDoc conventions.
-  
-- **Unit Testing**: Thorough unit tests using JUnit to validate the functionality of the Student and College classes.
-
-### This extended project demonstrates:
-
-- **Advanced Object-Oriented Programming**: Complex interactions between multiple classes.
-  
-- **Simulation Design**: Building a model to simulate real-world behavior.
-  
-- **Software Engineering Practices**: Producing stand-alone code, documenting with Javadoc, and using unit testing.
-
-**Grade**: 71/100 (Feedback indicated minor issues with constructor implementation and method logic; mostly related to specific details of the requirements and edge case handling, not core functionality. Significant portions of functionality were implemented correctly and received full credit.)
-
-The code for both projects is available within this repository. Feel free to explore the source code and unit tests. I am confident that these projects demonstrate my ability to design, implement, and test robust and well-documented Java applications.
-
-
-Error Handling: Robust handling of edge cases, such as attempting to borrow a book with an invalid card or when the shelf is empty.
-
-Grade: 100/100
-
-Project T1 Week 11: Enhanced Library System with Student and College Simulation
-Building upon the core library system, this project introduces two new classes: Student and College, creating a simulation of student library usage.
-
-Enhancements:
-
-Student Class: Models a student who can join the library, borrow and read textbooks, and return them. Includes methods to check if studies are complete, simulate studying, and describe the student's status.
-
-College Class: Simulates a college with a library and multiple students. Includes methods to describe the college's overall state, to advance the simulation one step (random student studies), and to run the simulation for a specified number of steps.
-
-Stand-Alone Execution: The project is designed to run independently of BlueJ, accepting command-line arguments to customize simulation parameters.
-
-Javadoc Documentation: Comprehensive Javadoc documentation for the Student and College classes, adhering to JavaDoc conventions.
-
-Unit Testing: Thorough unit tests using JUnit to validate the functionality of the Student and College classes.
-
-This extended project demonstrates:
-
-Advanced Object-Oriented Programming: Complex interactions between multiple classes.
-
-Simulation Design: Building a model to simulate real-world behavior.
-
-Software Engineering Practices: Producing stand-alone code, documenting with Javadoc, and using unit testing.
-
-Grade: 71/100 (Feedback indicated minor issues with constructor implementation and method logic; mostly related to specific details of the requirements and edge case handling, not core functionality. Significant portions of functionality were implemented correctly and received full credit.)
-
-The code for both projects is available within this repository. Feel free to explore the source code and unit tests. I am confident that these projects demonstrate my ability to design, implement, and test robust and well-documented Java applications.
+This project underscores my understanding of web development principles, my ability to create well-structured and aesthetically pleasing web pages, and my commitment to applying best practices in user interface design. The source code and all project files are available for review within this repository.
