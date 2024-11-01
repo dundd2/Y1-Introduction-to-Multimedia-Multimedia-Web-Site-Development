@@ -1,7 +1,14 @@
-# Y1-G5039 Introduction to Multimedia-Multimedia Web Site Development
+# Y1-Introduction to Multimedia-Multimedia Web Site Development
 This is a website project created for Year1 G5039:Introduction to Multimedia Assignments -Multimedia Web Site Development on Nov 2023. For more information please check the PDF file.
 
 This repository showcases my web development skills through a project completed for the Multimedia Web Site Development course, submitted on November 27, 2023. The project involved creating a CSS-managed personal website, adhering to human-computer interaction (HCI) and design guidelines. It highlights my ability to design functional, visually appealing, and user-friendly web applications, demonstrating my proficiency in HTML, CSS, and JavaScript.
+
+## ScreenShot:
+![ScreenShot](https://github.com/dundd2/Y1-Introduction-to-Multimedia-Multimedia-Web-Site-Development/SC%20(1).png)
+![ScreenShot](https://github.com/dundd2/Y1-Introduction-to-Multimedia-Multimedia-Web-Site-Development/SC%20(2).png)
+![ScreenShot](https://github.com/dundd2/Y1-Introduction-to-Multimedia-Multimedia-Web-Site-Development/SC%20(3).png)
+![ScreenShot](https://github.com/dundd2/Y1-Introduction-to-Multimedia-Multimedia-Web-Site-Development/SC%20(4).png)
+![ScreenShot](https://github.com/dundd2/Y1-Introduction-to-Multimedia-Multimedia-Web-Site-Development/SC%20(5).png)
 
 ## Project Overview
 
