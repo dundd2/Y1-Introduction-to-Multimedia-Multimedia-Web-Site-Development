@@ -1,6 +1,7 @@
 # Y1-Introduction to Multimedia-Multimedia Web Site Development
 
-View it on: https://dundd2.github.io/Y1-Introduction-to-Multimedia-Multimedia-Web-Site-Development/akibtsuuhome.html
+View it at: https://dundd2.github.io/Y1-Introduction-to-Multimedia-Multimedia-Web-Site-Development/akibtsuuhome.html
+
 This website project was created for Year 1 G5039:Introduction to Multimedia Assignments -Multimedia Web Site Development on Nov 2023. For more information please check the PDF file.
 
 This repository showcases my web development skills through a project completed for the Multimedia Web Site Development course, submitted on November 27, 2023. The project involved creating a CSS-managed personal website, adhering to human-computer interaction (HCI) and design guidelines. It highlights my ability to design functional, visually appealing, and user-friendly web applications, demonstrating my proficiency in HTML, CSS, and JavaScript.
