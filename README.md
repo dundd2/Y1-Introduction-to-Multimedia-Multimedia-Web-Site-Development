@@ -1,6 +1,6 @@
 # Y1-Introduction to Multimedia-Multimedia Web Site Development
 
-View it at: https://dundd2.github.io/Y1-Introduction-to-Multimedia-Multimedia-Web-Site-Development/akibtsuuhome.html
+View it at: [https://dundd2.github.io/Y1-Introduction-to-Multimedia-Multimedia-Web-Site-Development/akibtsuuhome.html](https://dundd2.github.io/Y1-Introduction-to-Multimedia-Multimedia-Web-Site-Development/CodeBase/akibtsuuhome.html)
 
 This website project was created for Year 1 G5039:Introduction to Multimedia Assignments -Multimedia Web Site Development on Nov 2023. For more information please check the PDF file.
 
